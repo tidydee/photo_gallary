@@ -13,4 +13,21 @@ $(function(){
 
     $('#main-image').attr('src',src); 
   });
+
+  $(".thumb-link").hover(function(){
+    $(".thumb-link").css("border-color", "yellow")
+
+  });
+
+  $(".thumb-link img").hover(function(){
+    $(this).css("border-color" ,"red").css("opacity" ,"0.3");
+    },function(){
+    $(this).css("border-color","rgba(131, 130, 130, 0.21)").css("opacity","1");
+  });
+
+  
+
+
+
+
 });

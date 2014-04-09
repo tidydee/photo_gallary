@@ -32,8 +32,11 @@
 }
 
 .thumb-link img{
+  border: inset 10px; 
+  border-color: rgba(131, 130, 130, 0.21);
+  border-radius: 50%;
   cursor: pointer;
-  padding: 10 10 10 10;
+  margin: 10 10 10 10;
   width: 150px;
   height:150px;
 }
