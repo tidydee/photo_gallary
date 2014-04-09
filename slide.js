@@ -14,20 +14,27 @@ $(function(){
     $('#main-image').attr('src',src); 
   });
 
+  $(".thumb-link").click(function(){
+      var figcap = $(this).find("h5").text();
+      $("#main-img-title").find("h5").text(figcap);
+
+  });
+
   $(".thumb-link").hover(function(){
     $(".thumb-link").css("border-color", "yellow")
 
   });
 
-  $(".thumb-link img").hover(function(){
-    $(this).css("border-color" ,"red").css("opacity" ,"0.3");
-    },function(){
-    $(this).css("border-color","rgba(131, 130, 130, 0.21)").css("opacity","1");
+  $("#thumb-container li").hover(function(){
+    $(this).find('img').css("border-color" ,"red").css("opacity" ,"0.3");
+  },function(){
+    $(this).find('img').css("border-color","rgba(131, 130, 130, 0.21)").css("opacity","1");
   });
 
-  
-
-
-
+  $("#thumb-container li").hover( function() {
+    $(this).find('.img-title').fadeIn(300);
+  }, function() {
+    $(this).find('.img-title').fadeOut(100);
+  });
 
 });

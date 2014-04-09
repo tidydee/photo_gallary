@@ -7,6 +7,14 @@
 #main-image{
   height: 100%;
   width: auto;
+  /*position: relative;*/
+}
+
+#main-img-title{
+  float: right;
+  border: 5px solid #BDBDBD;
+  background: #E0E0E0;
+  padding: 5px;  
 }
 
 #image-display{
@@ -14,7 +22,35 @@
   margin: auto;
   width: 800px;
   height: 400px;
-  border: solid blue;
+}
+
+.img-caption-wrapper{
+  width:250px;
+  height:250px;
+  overflow:hidden;
+  position:relative;
+}
+
+.img-title {
+  /*position: absolute;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(163, 0, 0, 0.72);
+  opacity: 0;*/
+  display: none; /* comment this out for CSS hover */
+  /*transition: all 0.5s ease;*/
+}
+
+.img-title h5 {
+  position: absolute;
+  color: rgba(163, 0, 0, 0.72);
+  top: 33%;
+  width: 100%;
+  text-align: center;
 }
 
 #thumb-container{
@@ -23,12 +59,9 @@
   width: 800px;
 }
 
-#thumb-container ul{
-  
-}
-
 #thumb-container li {
   float: left;
+  position: relative;
 }
 
 .thumb-link img{
