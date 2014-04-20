@@ -1,34 +1,100 @@
 #wrapper{
-  width: 900px;
+  width: 770px;
   margin: auto;
-  border: solid red;
+  /*border: solid red;*/
 }
 
 #main-image{
   height: 100%;
   width: auto;
+  float: left;
+  cursor: pointer;
+  /*margin-left: 50px;*/
   /*position: relative;*/
+  /*top: 25px;*/
+}
+
+#map-inner-container{
+  /*border: solid 2px red;*/
+  width: 100px;
+  height: 100px;
+}
+
+#inner-thumb-container{
+  /*position: relative;*/
+  width: 760px;
+ /* margin: auto;*/
+ /* border: solid 5px red;*/
+}
+
+.image-inner-container{
+  margin: auto;
+  /*border: solid 2px yellow;*/
+  width: 400px;
+}
+
+
+#google-map{
+  position: absolute;
+  width: 305px;
+  height: 200px;
+  border: solid 2px green;
+  top: 50%;
+  left: 55%;
+}
+
+.thumb-link img {
+  border-color: rgba(131,130,130,0.21);
+  opacity: 1;
+
+}
+
+.thumb-link:hover img  {
+  border-color: red;
+  opacity: 0.3;
+}
+
+.thumb-link .img-title {
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.thumb-link:hover .img-title {
+  opacity: 1;
 }
 
 #main-img-title{
-  float: right;
-  border: 5px solid #BDBDBD;
-  background: #E0E0E0;
   padding: 5px;  
 }
 
-#image-display{
-  text-align: center;
-  margin: auto;
-  width: 800px;
-  height: 400px;
+figcaption#main-img-title{
+  position: absolute;
+  bottom: 0;
+  width: 380;
+  margin-left: 200px;
+  opacity: 0.5;
+  font-size: 1.5em;
+  font-family: Arial;
+  color: white;
 }
 
-.img-caption-wrapper{
-  width:250px;
-  height:250px;
-  overflow:hidden;
-  position:relative;
+#image-display {
+  text-align: center;
+  /*margin: auto;*/
+  width: 770px;
+  height: 400px;
+  position: relative;
+  display: none;
+ 
+}
+
+.img-caption-wrapper {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
 }
 
 .img-title {
@@ -40,8 +106,7 @@
   text-align: center;
   border-radius: 50%;
   background-color: rgba(163, 0, 0, 0.72);
-  opacity: 0;*/
-  display: none; /* comment this out for CSS hover */
+  */opacity: 0;
   /*transition: all 0.5s ease;*/
 }
 
@@ -55,8 +120,7 @@
 
 #thumb-container{
   margin: auto;
-  border: solid green;
-  width: 800px;
+  width: 770px;
 }
 
 #thumb-container li {
