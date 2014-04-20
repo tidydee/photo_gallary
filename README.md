@@ -8,3 +8,7 @@ A jQuery photo gallary
 #### The application listens for the 20 most recent posted pictures on that were placed in the Lighthouse Catagory
 * The app refreshes itself every 5 minutes.
 * Using javascript & jQeury I designed a elegent looking photo gallary that displays the images in a fashionable manner.
+
+#### Click below to see sample:
+* http://htmlpreview.github.io/?https://github.com/tidydee/photo_gallary/blob/master/gallery.html
+
